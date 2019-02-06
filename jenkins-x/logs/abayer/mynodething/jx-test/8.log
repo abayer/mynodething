@@ -1,0 +1,62 @@
+Step: build-step-credential-initializer:
+
+{"level":"warn","ts":1549462081.1716392,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1549462081.1727426,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-source:
+
+{"level":"warn","ts":1549462082.4691339,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1549462082.6832118,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/abayer/mynodething\" @ \"jx-test\" in path \"/workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-step2:
+
+Generated Git credentials file /home/jenkins/git/credentials
+Step: build-step-step3:
+
+Step: build-step-step4:
+
+No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Using helmBinary helm with feature flag: template-mode
+Initialising Helm 'init --client-only'
+Adding missing Helm repo: jenkins-x http://chartmuseum.jenkins-x.io
+Successfully added Helm repository jenkins-x.
+Adding missing Helm repo: releases http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository releases.
+Step: build-step-step5:
+
+Tag v1.1.31 created and pushed to remote origin
+Step: build-step-step6:
+
+Converted /workspace/source/charts/mynodething to an unshallow repository
+Generating change log from git ref v1.0.0 => d4144b52668308fe485c28aead07c9c584fb0a06
+Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
+Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
+Finding issues in commit messages using git format
+Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
+Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
+Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
+Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
+No release found for abayer/mynodething and tag v1.1.31 so creating a new release
+Updated the release information at https://github.com/abayer/mynodething/releases/tag/v1.1.31
+generated: /workspace/source/charts/mynodething/templates/release.yaml
+Created Release mynodething-1-1-31 resource in namespace jx
+Updating PipelineActivity abayer-mynodething-jx-test-8 with version 1.1.31
+Updated PipelineActivities abayer-mynodething-jx-test-8 with release notes URL: https://github.com/abayer/mynodething/releases/tag/v1.1.31
+Step: build-step-step7:
+
+No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file mynodething-1.1.31.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+Step: build-step-step8:
+
+prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/jx/issues/2410
+Promoting app mynodething version 1.1.31 to namespace jx-staging
+Created Pull Request: https://github.com/abayer/environment-snagglefootrose-staging/pull/11
+
+Failed to query the Pull Request last commit status for https://github.com/abayer/environment-snagglefootrose-staging/pull/11 ref 7df36bcb177f10639a01d26dd64d641e062985c4 Could not find a status for repository abayer/environment-snagglefootrose-staging with ref 7df36bcb177f10639a01d26dd64d641e062985c4
+Failed to merge the Pull Request https://github.com/abayer/environment-snagglefootrose-staging/pull/11 due to PUT https://api.github.com/repos/abayer/environment-snagglefootrose-staging/pulls/11/merge: 405 Pull Request is not mergeable [] maybe I don't have karma?
+Rebasing PullRequest due to conflict
+Pull Request https://github.com/abayer/environment-snagglefootrose-staging/pull/11 is merged at sha b1e646e727a36c7f5c7386e7953a3b24a30488a1
+Pull Request merged but we are not waiting for the update pipeline to complete!
+Could not find the service URL in namespace jx-staging for names mynodething, jx-mynodething, jx-staging-mynodething
