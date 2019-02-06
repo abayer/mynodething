@@ -3,7 +3,7 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: jenkins-nodejs
+          image: nodejs
         stages:
           - name: Build
             steps:
