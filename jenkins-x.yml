@@ -5,11 +5,10 @@ pipelineConfig:
         agent:
           image: jenkins-nodejs
         stages:
-          stage:
-            - name: Build
-              steps:
-                - command: /bin/bash
-                  args:
-                    - npm
-                    - install
+          - name: Build
+            steps:
+              - command: /bin/bash
+                args:
+                  - npm
+                  - install
                     
