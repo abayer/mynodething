@@ -1,20 +1,18 @@
 Step: build-step-credential-initializer:
 
-{"level":"warn","ts":1549910496.025053,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1549910496.025811,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Unable to retrieve container logs for docker://4ac96eb9fa56e13b4a89e7a12da82267bc8950e4dcb5487cb7eea4c100e58566
 Step: build-step-git-source-workspace:
 
-{"level":"warn","ts":1549910497.2365098,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1549910497.4443934,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/abayer/mynodething\" @ \"jx-test\" in path \"/workspace/workspace\""}
+Unable to retrieve container logs for docker://0b9ad8ed78a2d66ae3285c7104dd2871b653d0286547952a5aa4db87e1a9223a
 Step: build-step-place-tools:
 
+Unable to retrieve container logs for docker://1cef87948375ba7ac3150eea8bccb623018c9dba34e88276467109d93b9e379e
 Step: build-step-step2:
 
+Unable to retrieve container logs for docker://8914cd920c3eb94d49e435cb4d882440d0aef4d400a2400e41c60887e5215566
 Step: build-step-source-mkdir-abayer-mynodething-jx-test:
 
-{"level":"warn","ts":1549910500.2956364,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1549910500.2984767,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /pvc/build/workspace\""}
+Unable to retrieve container logs for docker://10e23fac144f8544c07fe99795808c561df4b846513bfb6537db3488710c9b2f
 Step: build-step-source-copy-abayer-mynodething-jx-test:
 
-{"level":"warn","ts":1549910501.3401632,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1549910501.3498037,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"cp -r /workspace/workspace/. /pvc/build/workspace\""}
+Unable to retrieve container logs for docker://6f2e9a948449055a9d4dd830ccebd506c40a16686e99e959edb0935ed7bf5d6f
