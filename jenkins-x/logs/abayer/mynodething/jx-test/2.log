@@ -1,59 +1,20 @@
 Step: build-step-credential-initializer:
 
-{"level":"warn","ts":1549461766.6675324,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1549461766.6679375,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
-Step: build-step-git-source-source:
+{"level":"warn","ts":1549909809.9915645,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1549909809.991918,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-workspace:
 
-{"level":"warn","ts":1549461768.6296496,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1549461768.8862476,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/abayer/mynodething\" @ \"jx-test\" in path \"/workspace/source\""}
+{"level":"warn","ts":1549909811.568537,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/test\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1549909811.766659,"logger":"fallback-logger","caller":"git-init/main.go:92","msg":"Successfully cloned \"https://github.com/abayer/mynodething\" @ \"jx-test\" in path \"/workspace/workspace\""}
 Step: build-step-place-tools:
 
 Step: build-step-step2:
 
-Generated Git credentials file /home/jenkins/git/credentials
-Step: build-step-step3:
+Step: build-step-source-mkdir-abayer-mynodething-jx-test:
 
-Step: build-step-step4:
+{"level":"warn","ts":1549909844.575393,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1549909844.6221576,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /pvc/build/workspace\""}
+Step: build-step-source-copy-abayer-mynodething-jx-test:
 
-No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Using helmBinary helm with feature flag: template-mode
-Initialising Helm 'init --client-only'
-Adding missing Helm repo: jenkins-x http://chartmuseum.jenkins-x.io
-Successfully added Helm repository jenkins-x.
-Adding missing Helm repo: releases http://jenkins-x-chartmuseum:8080
-Successfully added Helm repository releases.
-Step: build-step-step5:
-
-Tag v1.1.25 created and pushed to remote origin
-Step: build-step-step6:
-
-Converted /workspace/source/charts/mynodething to an unshallow repository
-Generating change log from git ref v1.0.0 => 0468cd923690d6cced2a96c6d4f57c60d92d8b6c
-Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
-Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
-Finding issues in commit messages using git format
-Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
-Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
-Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
-Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
-No release found for abayer/mynodething and tag v1.1.25 so creating a new release
-Updated the release information at https://github.com/abayer/mynodething/releases/tag/v1.1.25
-generated: /workspace/source/charts/mynodething/templates/release.yaml
-Created Release mynodething-1-1-25 resource in namespace jx
-Updating PipelineActivity abayer-mynodething-jx-test-2 with version 1.1.25
-Updated PipelineActivities abayer-mynodething-jx-test-2 with release notes URL: https://github.com/abayer/mynodething/releases/tag/v1.1.25
-Step: build-step-step7:
-
-No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file mynodething-1.1.25.tgz to http://jenkins-x-chartmuseum:8080/api/charts
-Received 201 response: {"saved":true}
-Step: build-step-step8:
-
-prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/jx/issues/2410
-Promoting app mynodething version 1.1.25 to namespace jx-staging
-Created Pull Request: https://github.com/abayer/environment-snagglefootrose-staging/pull/5
-
-Pull Request https://github.com/abayer/environment-snagglefootrose-staging/pull/5 is merged at sha 7f31f66d0773a61ea333992aa235bb248d4ec72a
-Pull Request merged but we are not waiting for the update pipeline to complete!
-Could not find the service URL in namespace jx-staging for names mynodething, jx-mynodething, jx-staging-mynodething
+{"level":"warn","ts":1549909845.1421587,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1549909845.3490534,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"cp -r /workspace/workspace/. /pvc/build/workspace\""}
