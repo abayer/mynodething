@@ -7,8 +7,7 @@ pipelineConfig:
         stages:
           - name: Build
             steps:
-              - command: /bin/bash
+              - command: npm
                 args:
-                  - npm
                   - install
                     
