@@ -9,7 +9,7 @@ pipelineConfig:
             steps:
               - command: ls
                 args:
-                  - ls -la
+                  - '-la'
               - command: npm
                 args:
                   - install
